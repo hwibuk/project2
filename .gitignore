@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# ROS2 Build Folders
+build/
+install/
+log/
+temp/
+
+# IDE settings
+.vscode/
+.idea/
+.venv/
+
+# 기타
+*.swp

@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="limit_sign">
+    <static>true</static>
+
+    <link name="pole">
+      <pose>0 0 0.04 0 0 0</pose>
+      <collision name="col">
+        <geometry><cylinder><radius>0.005</radius><length>0.08</length></cylinder></geometry>
+      </collision>
+      <visual name="vis">
+        <geometry><cylinder><radius>0.005</radius><length>0.08</length></cylinder></geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+
+    <link name="head">
+      <pose>0 0 0.095 0 0 0</pose>
+      <collision name="col">
+        <geometry><box><size>0.001 0.03 0.03</size></box></geometry>
+      </collision>
+      <visual name="vis">
+        <geometry><box><size>0.001 0.03 0.03</size></box></geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>1 1 1 1</emissive>
+          <pbr>
+            <metal>
+	      <emissive_map>../../textures/limit_sign.png</emissive_map>	   
+	      <metalness>0.0</metalness>
+              <roughness>1.0</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
