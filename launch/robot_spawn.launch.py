@@ -8,7 +8,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     # ----------------------------------------------------------------------
-    # 🚀 [WSL2 맞춤형 GPU 가속 & GUI 충돌 방지 설정]
+    #  [WSL2 맞춤형 GPU 가속 & GUI 충돌 방지 설정]
     # ----------------------------------------------------------------------
     os.environ['MESA_GL_VERSION_OVERRIDE'] = '4.6'
     os.environ['MESA_GLSL_VERSION_OVERRIDE'] = '460'
